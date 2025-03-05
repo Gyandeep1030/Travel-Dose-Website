@@ -1,0 +1,83 @@
+.TripBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 32%;
+    text-align: start;
+    box-shadow: 0 5px 25px 2px rgba(0,0,0,0.1 );
+    cursor: pointer;
+    padding: auto;
+
+
+}
+
+.img{
+
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #333;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.img:hover{
+    box-shadow: 0 5px 25px 2px rgba(0,0,0,0.2 );
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.TripBoard h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.TripBoard p {
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px){
+    .TripBoard{
+        width: 95%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        box-shadow: 0 5px 25px 2px rgba(0,0,0,0.1 );
+        cursor: pointer;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+}
+
+
+

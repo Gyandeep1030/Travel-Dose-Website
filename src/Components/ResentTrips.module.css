@@ -1,0 +1,42 @@
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.mainBody h1{
+    font-size: 3rem;
+    color: #333;
+}
+
+
+
+.BoardBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    .BoardBody{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
