@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeroSection } from './HeroSection';
 import Footer from './Footer';
+import TravelPackages from './TravelPackages';
 
 function About() {
     return (  
@@ -14,6 +15,7 @@ function About() {
                 button = "buttonHidden"
     
             />
+            <TravelPackages />
             <Footer />
         </div>
     );
