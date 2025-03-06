@@ -3,6 +3,7 @@ import { HeroSection } from './HeroSection';
 import Destination from './Destination';
 import ResentTrips from './ResentTrips';
 import Footer from './Footer';
+import TravelPackages from './TravelPackages';
 function Home() {
     return ( 
         <div >
@@ -16,6 +17,7 @@ function Home() {
                 button = "button"
             />
             <Destination />
+            <TravelPackages />
             <ResentTrips />
             <Footer />
 

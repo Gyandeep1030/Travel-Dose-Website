@@ -2,6 +2,7 @@ import React from 'react';
 import { HeroSection } from './HeroSection';
 import Footer from './Footer';
 import Form from './ContactForm';
+import ResentTrips from './ResentTrips';
 
 function Contact() {
     return ( 
@@ -16,6 +17,8 @@ function Contact() {
             />
 
             <Form />
+            <ResentTrips />
+
 
             <Footer />
         </div>
