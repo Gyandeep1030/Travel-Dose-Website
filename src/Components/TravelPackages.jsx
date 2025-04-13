@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "./TravelPackages.module.css";
+import img1 from "../assets/Bali, Indonesia.jpg";
+import img2 from "../assets/Paris, France.jpg";
+import img3 from "../assets/Tokyo, Japan.jpg";
+import img4 from "../assets/Maldives.jpg";
+import img5 from "../assets/GOA.jpg";
+import img6 from "../assets/Manali.jpg";
+import img7 from "../assets/Singapore.jpg";
 
 const travelData = [
   {
     id: 1,
     name: "Bali, Indonesia",
-    image: "src/assets/Bali, Indonesia.jpg",
+    image: {img1},
     location: "Indonesia",
     price: "$799",
     rating: "⭐⭐⭐⭐⭐",
@@ -13,7 +20,7 @@ const travelData = [
   {
     id: 2,
     name: "Paris, France",
-    image: "src/assets/Paris, France.jpg",
+    image: {img2},
     location: "France",
     price: "$999",
     rating: "⭐⭐⭐⭐",
@@ -21,7 +28,7 @@ const travelData = [
   {
     id: 3,
     name: "Tokyo, Japan",
-    image: "src/assets/Tokyo, Japan.jpg",
+    image: {img3},
     location: "Japan",
     price: "$899",
     rating: "⭐⭐⭐⭐⭐",
@@ -29,7 +36,7 @@ const travelData = [
   {
     id: 4,
     name: "Maldives ",
-    image: "src/assets/Maldives.jpg",
+    image: {img4},
     location: "Maldives",
     price: "$1199",
     rating: "⭐⭐⭐⭐⭐",
@@ -38,7 +45,7 @@ const travelData = [
     id: 4,
     name: "GOA ",
 
-    image: "src/assets/GOA.jpg",
+    image: {img5},
     location: "GOA",
     price: "$199",
     rating: "⭐⭐⭐⭐⭐",
@@ -46,7 +53,7 @@ const travelData = [
   {
     id: 4,
     name: "Manali",
-    image: "src/assets/Manali.jpg",
+    image: {img6},
     location: "Manali",
     price: "$1199",
     rating: "⭐⭐⭐⭐⭐",
@@ -54,7 +61,7 @@ const travelData = [
   {
     id: 4,
     name: "Singapore",
-    image: "src/assets/Singapore.jpg",
+    image:{img7},
     location: "Singapore",
     price: "$1199",
     rating: "⭐⭐⭐⭐⭐",
