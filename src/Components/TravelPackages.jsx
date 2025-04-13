@@ -12,7 +12,7 @@ const travelData = [
   {
     id: 1,
     name: "Bali, Indonesia",
-    image: {img1},
+    image: img1,
     location: "Indonesia",
     price: "$799",
     rating: "⭐⭐⭐⭐⭐",
@@ -20,7 +20,7 @@ const travelData = [
   {
     id: 2,
     name: "Paris, France",
-    image: {img2},
+    image: img2,
     location: "France",
     price: "$999",
     rating: "⭐⭐⭐⭐",
@@ -28,7 +28,7 @@ const travelData = [
   {
     id: 3,
     name: "Tokyo, Japan",
-    image: {img3},
+    image: img3,
     location: "Japan",
     price: "$899",
     rating: "⭐⭐⭐⭐⭐",
@@ -36,7 +36,7 @@ const travelData = [
   {
     id: 4,
     name: "Maldives ",
-    image: {img4},
+    image: img4,
     location: "Maldives",
     price: "$1199",
     rating: "⭐⭐⭐⭐⭐",
@@ -44,7 +44,7 @@ const travelData = [
   {
     id: 4,
     name: "GOA ",
-    image: {img5},
+    image: img5,
     location: "GOA",
     price: "$199",
     rating: "⭐⭐⭐⭐⭐",
@@ -52,7 +52,7 @@ const travelData = [
   {
     id: 4,
     name: "Manali",
-    image: {img6},
+    image: img6,
     location: "Manali",
     price: "$1199",
     rating: "⭐⭐⭐⭐⭐",
@@ -60,7 +60,7 @@ const travelData = [
   {
     id: 4,
     name: "Singapore",
-    image:{img7},
+    image:img7,
     location: "Singapore",
     price: "$1199",
     rating: "⭐⭐⭐⭐⭐",
