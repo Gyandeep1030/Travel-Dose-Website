@@ -8,15 +8,47 @@ const ContactForm = () => {
     subject: "",
     message: ""
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted", formData);
+    setIsLoading(true);
+    setSubmitStatus(null);
+    
+    try {
+      const response = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
+      } else {
+        const errorData = await response.json();
+        console.error('Server error:', errorData);
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -57,7 +89,19 @@ const ContactForm = () => {
             onChange={handleChange} 
             className={styles.textarea} 
           ></textarea>
-          <button type="submit" className={styles.button}>Submit</button>
+          <button 
+            type="submit" 
+            className={styles.button}
+            disabled={isLoading}
+          >
+            {isLoading ? 'Sending...' : 'Submit'}
+          </button>
+          {submitStatus === 'success' && (
+            <p className={styles.successMessage}>Message sent successfully!</p>
+          )}
+          {submitStatus === 'error' && (
+            <p className={styles.errorMessage}>Failed to send message. Please try again.</p>
+          )}
         </form>
       </div>
       <div className={styles.infoContainer}>

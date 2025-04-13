@@ -42,7 +42,7 @@ const travelData = [
     rating: "⭐⭐⭐⭐⭐",
   },
   {
-    id: 4,
+    id: 5,
     name: "GOA ",
     image: img5,
     location: "GOA",
@@ -50,7 +50,7 @@ const travelData = [
     rating: "⭐⭐⭐⭐⭐",
   },
   {
-    id: 4,
+    id: 6,
     name: "Manali",
     image: img6,
     location: "Manali",
@@ -58,7 +58,7 @@ const travelData = [
     rating: "⭐⭐⭐⭐⭐",
   },
   {
-    id: 4,
+    id: 7,
     name: "Singapore",
     image:img7,
     location: "Singapore",
