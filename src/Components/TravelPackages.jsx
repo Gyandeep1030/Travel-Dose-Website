@@ -4,7 +4,7 @@ import img1 from "../assets/Bali, Indonesia.jpg";
 import img2 from "../assets/Paris, France.jpg";
 import img3 from "../assets/Tokyo, Japan.jpg";
 import img4 from "../assets/Maldives.jpg";
-import img5 from "../assets/GOA.jpg";
+import img5 from "../assets/Goa.jpg";
 import img6 from "../assets/Manali.jpg";
 import img7 from "../assets/Singapore.jpg";
 
