@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./TripBoard.module.css";
+import style from "./Tripboard.module.css";
 function TripBoard(props) {
     return ( 
         <div className={style.TripBoard}>
