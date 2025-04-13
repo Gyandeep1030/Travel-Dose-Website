@@ -2,7 +2,7 @@ import React from 'react';
 import { HeroSection } from './HeroSection';
 import Footer from './Footer';
 import Form from './ContactForm';
-import ResentTrips from './ResentTrips';
+import RecentTrips from './RecentTrips';
 
 function Contact() {
     return ( 
@@ -17,7 +17,7 @@ function Contact() {
             />
 
             <Form />
-            <ResentTrips />
+            <RecentTrips />
 
 
             <Footer />

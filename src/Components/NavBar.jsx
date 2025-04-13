@@ -6,14 +6,23 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = { clicked: true };
+
+    
     }
 
     toggleMenu = () => {
         this.setState({ clicked: !this.state.clicked });
     };
 
+    componentDidMount(){
+
+    // if( window.screen.width >= 768){
+    //     this.setState({ clicked:false});
+    // }
+    }
 
     render() {
+
         return (
             <nav className={style.navbarItems}>
                 <h1 className={style.logo}>Travel-Dose</h1>

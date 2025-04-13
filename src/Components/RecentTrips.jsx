@@ -3,10 +3,10 @@ import TripBoard from './TripBoard';
 import style from "./ResentTrips.module.css";
 
 
-function ResentTrips() {
+function RecentTrips() {
     return ( 
         <div className={style.mainBody}>
-            <h1>Resent Trips</h1>
+            <h1>Recent Trips</h1>
             <div className={style.BoardBody}>
                 <TripBoard img = "src/assets/5.jpg"  PlaceName = "Switzerland" Discription = "Nestled in the heart of Europe, Switzerland is renowned for its breathtaking landscapes, pristine lakes, and majestic Alps. Whether you're an adventure seeker eager for skiing and hiking, or a culture enthusiast drawn to charming cities like Zurich and Geneva, Switzerland offers a harmonious blend of natural beauty and cosmopolitan sophistication."/>
                 <TripBoard img = "src/assets/11.jpg"  PlaceName = "Bangkok" Discription = "Vibrant and bustling, Bangkok is Thailand's electrifying capital, known for its rich cultural heritage and modern dynamism. Explore ornate temples such as Wat Arun and Wat Phra Kaew, indulge in the flavors of street food markets, and immerse yourself in the lively nightlife. From floating markets to high-rise skyscrapers, Bangkok is a city of contrasts that never ceases to amaze."/>
@@ -15,4 +15,4 @@ function ResentTrips() {
         </div>
      );
 }
-export default ResentTrips;
+export default RecentTrips;

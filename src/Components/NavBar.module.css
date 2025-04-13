@@ -12,6 +12,15 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.navUlHide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    z-index: 1;
+}
+
 .navbarItems a{
     color: white;
     text-decoration: none;
@@ -55,6 +64,7 @@
     .navbarItems{
         z-index: 99;
     }
+
     .navUl{
         display: flex;
         flex-direction: column;
@@ -107,8 +117,5 @@
         cursor: pointer;
         z-index: 99;
     }
-
-
-    
-    
+  
 }

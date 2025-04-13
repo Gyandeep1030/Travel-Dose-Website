@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeroSection } from './HeroSection';
 import Destination from './Destination';
-import ResentTrips from './ResentTrips';
+import RecentTrips from './RecentTrips';
 import Footer from './Footer';
 import TravelPackages from './TravelPackages';
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
             />
             <Destination />
             <TravelPackages />
-            <ResentTrips />
+            <RecentTrips />
             <Footer />
 
 
