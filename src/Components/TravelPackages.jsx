@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TravelPackages.module.css";
-import img1 from "../assets/Bali, Indonesia.jpg";
+import img1 from "../assets/13.jpg";
 import img2 from "../assets/Paris, France.jpg";
 import img3 from "../assets/Tokyo, Japan.jpg";
 import img4 from "../assets/Maldives.jpg";
@@ -44,7 +44,6 @@ const travelData = [
   {
     id: 4,
     name: "GOA ",
-
     image: {img5},
     location: "GOA",
     price: "$199",
