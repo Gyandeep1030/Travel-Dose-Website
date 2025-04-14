@@ -15,7 +15,6 @@
     {
       "src": "/(.*)", 
       "dest": "/src/pages/$1",
-      "continue": true
     }
   ]
 }
