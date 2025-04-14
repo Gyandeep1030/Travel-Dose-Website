@@ -13,8 +13,8 @@
       "dest": "server.js"
     },
     {
-      "source": "/(.*)", 
-      "destination": "/",
+      "src": "/(.*)",
+      "dest":"/",
       "continue": true
     }
   ]
