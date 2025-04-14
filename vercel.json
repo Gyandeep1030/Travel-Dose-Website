@@ -13,8 +13,8 @@
       "methods": ["POST"]
     },
     {
-      "src": "/(.*)", 
-      "dest": "/src/pages/$1",
+      "src": "/(.*)",
+      "dest": "/src/pages/$1"
     }
   ]
 }
