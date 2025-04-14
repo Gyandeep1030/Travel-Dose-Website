@@ -10,13 +10,15 @@ app.use(cors({
   origin: [
     'http://localhost:5174', 
     'http://localhost:5173',
-    'https://your-vercel-app.vercel.app'
+    'https://travel-dose-website.vercel.app/'
   ],
   methods: ['POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true
 }));
 app.use(express.json());
+
+const PORT = process.env.PORT || 3001;
 
 app.post('/api/contact', async (req, res) => {
   try {
@@ -55,6 +57,6 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log('API server running on http://localhost:3001');
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

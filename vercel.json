@@ -1,5 +1,4 @@
 {
-  
   "version": 2,
   "builds": [
     {
@@ -10,11 +9,12 @@
   "routes": [
     {
       "src": "/api/contact",
-      "dest": "server.js"
+      "dest": "/server.js",
+      "methods": ["POST"]
     },
     {
-      "src": "/(.*)",
-      "dest":"/",
+      "src": "/(.*)", 
+      "dest": "/src/pages/$1",
       "continue": true
     }
   ]
