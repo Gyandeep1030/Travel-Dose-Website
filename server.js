@@ -7,7 +7,11 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5174', 'http://localhost:5173'],
+  origin: [
+    'http://localhost:5174', 
+    'http://localhost:5173',
+    'https://your-vercel-app.vercel.app'
+  ],
   methods: ['POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true
